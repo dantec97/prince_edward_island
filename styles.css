@@ -423,3 +423,8 @@ img.loaded {
 html {
     scroll-behavior: smooth;
 }
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
