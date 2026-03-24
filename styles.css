@@ -184,10 +184,18 @@ nav a:hover {
     color: #2c3e50;
 }
 
+.gallery h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .gallery-item {
@@ -427,4 +435,39 @@ html {
 .contact-info a {
     color: #ffffff;
     text-decoration: none;
+}
+/* ...existing code... */
+
+.contact {
+    background: linear-gradient(rgba(44,62,80,0.7), rgba(44,62,80,0.7)), url('images/IMG_0355.jpg') center center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-info p, .contact-info a {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.contact h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* Optional: fade-in effect */
+.contact {
+    opacity: 0;
+    animation: fadeInContactBg 1.2s 0.3s forwards;
+}
+@keyframes fadeInContactBg {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
